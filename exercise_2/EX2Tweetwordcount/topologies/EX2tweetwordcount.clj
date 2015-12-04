@@ -25,7 +25,7 @@
           {"parse-tweet-bolt" ["word"]}
           "bolts.wordcount.WordCounter"
           ["word" "count"]
-          :p 1
+          :p 10
           )
     }
   ]

@@ -43,7 +43,7 @@ class TweetStreamListener(tweepy.StreamListener):
 class Tweets(Spout):
 
     def initialize(self, stormconf, context):
-        self._queue = Queue.Queue(maxsize = 100)
+        self._queue = Queue.Queue(maxsize = 10000)
 
         consumer_key = auth_get("consumer_key") 
         consumer_secret = auth_get("consumer_secret") 

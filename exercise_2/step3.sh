@@ -1,8 +1,9 @@
 #!/bin/bash
-
+# Initialize Postgres
 /data/start_postgres.sh
-sudo -u postgres psql
-
+#sudo -u postgres psql
+#Create DB
+python ./createDB.py
 ## AFTER changing the spout and bolts
-cd /data/w205/exercises/W205fall2015/exercise_2/EX2Tweetwordcount
+cd ./EX2Tweetwordcount
 sparse run
