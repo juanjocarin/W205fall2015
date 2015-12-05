@@ -1,4 +1,5 @@
 import psycopg2
+import sys
 
 conn = psycopg2.connect(dbname="postgres", database="Tcount", 
     user="postgres", password="", host="localhost", port="5432")
