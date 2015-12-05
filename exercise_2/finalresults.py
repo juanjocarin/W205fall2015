@@ -12,7 +12,7 @@ if len(sys.argv) > 1:
     for rec in records:
         print "Total number of occurences of "'"{}"'": {}".format(rec[0], rec[1])
 else:
-    cur.execute("SELECT word, count FROM Tweetwordcount ORDER BY count,word ASC")
+    cur.execute("SELECT word, count FROM Tweetwordcount ORDER BY word ASC")
     records = cur.fetchall()
     for rec in records:
         print "({}, {})".format(rec[0], rec[1])
